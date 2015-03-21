@@ -1,0 +1,10 @@
+//@module ../qui.less
+//Mixin:opacity
+.opacity (@opacity: 0.5) {
+    -webkit-opacity: @opacity;
+    -moz-opacity: @opacity;
+    opacity: @opacity;
+    @ms-opacity: @opacity * 100;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ms-opacity})";
+    filter: ~"alpha(opacity=@{ms-opacity})";
+}
